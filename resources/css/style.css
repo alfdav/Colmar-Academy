@@ -1,0 +1,512 @@
+body{
+  margin: 0;
+  font-size: 14px !important;
+  font-family: "Arimo", sans-serif;
+  background-color: #ffffff;
+}
+
+.container{
+  display: flex;
+}
+
+/* header, for your eyes pleasure.
+*/
+
+.business-name{
+  align-items: center;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-title{
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.business-title img{
+  height: 50px;
+}
+
+.colmar{
+  color: #003cb3;
+  font-size: 1.5rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 800;
+}
+
+.academy{
+  color: #808080;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Maven Pro', sans-serif;
+}
+.menu span{
+  margin: 16px;
+  color: #001a4d;
+  font-family: "Arimo", sans-serif;
+  transition: color 500ms ease;
+}
+
+.menu span:hover{
+  color: #6699ff;
+}
+.menu{
+  display: inline-flex;
+}
+
+.business-name-mobile{
+  display: none;
+}
+
+/* mobile media */
+@media only screen and (max-width: 1024px ){
+.business-name-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+}
+.business-name{
+  display: none;
+}
+}
+
+/*le banner*/
+
+.banner{
+  background-color: #cccccc;
+  font-family: "Arimo", sans-serif;
+}
+
+#title{
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.text h3 {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.banner img{
+  margin: 32px 40px 32px 24px;
+  max-width: 60%;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  color: #373737;
+  font-family: "Arimo", sans-serif;
+}
+
+.button{
+  font-size: 1.25rem;
+  background-color: #373737;
+  color: #F4F4F4;
+  width: 60%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  transition: color 750ms ease;
+  margin: 1rem auto;
+}
+
+.button:hover{
+  background-color: #003cb3;
+}
+
+h1{
+  color:  #373737;
+  opacity: 1;
+}
+
+.banner-mobile{
+  display: none;
+}
+
+/*BANNER MOBILE*/
+@media only screen and (max-width: 768px){
+
+.banner{
+  display: none;
+}
+.banner-mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: #cccccc;
+}
+
+.banner-mobile img{
+  width: 100%;
+  height: auto;
+}
+
+.text-mob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arimo", sans-serif;
+}
+
+.text-mob h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.text-mob h3{
+  font-size: 1rem;
+  margin-bottom: 1.50rem;
+}
+.button-mob{
+  background-color: #373737;
+  color: #F4F4F4;
+  width: 70%;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.button-mob:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+}
+
+/*COMPANY INFO!*/
+
+.university-info{
+  display: flex;
+  flex-direction: row;
+  font-family: "Arimo", sans-serif;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.main-info img{
+  width: 100%;
+  flex-grow: 3;
+}
+
+.main-info h2,
+.main-info p{
+  color: #373737;
+}
+
+.main-info h2{
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.main-info p {
+  font-size: 1rem;
+}
+
+.sub-info{
+  margin: 2rem 0;
+  width: 40%;
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #DCD0C0;
+}
+
+.info{
+  display: flex;
+}
+.info:nth-child(2n+0){
+  background-color: #DCD0C0;
+}
+.info-img{
+  margin: 16px;
+}
+
+.info-img img{
+  width: 10rem;
+}
+
+.text-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:
+}
+
+.text-info h3{
+  margin-bottom: 8px;
+  color: #373737;
+  font-size: 1.15rem;
+}
+
+.text-info span{
+  margin-bottom: 8px;
+  color: #373737;
+}
+
+#read-more{
+  color: blue;
+}
+
+#read-more:hover{
+  color: #C0B283;
+}
+
+.sub-info-mob{
+  display: none;
+}
+/*MEDIA QUERYYYYYYYYY*/
+@media only screen and (max-width: 480px){
+  .main-info{
+    display: none;
+  }
+  .sub-info{
+    display: none;
+    /*border-bottom: #C0B283;*/
+  }
+
+  .sub-info-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 0 16px;
+  }
+  #read-more-mob{
+    color: blue;
+    display: block;
+    margin: 16px 0;
+  }
+  #read-more-mob:hover{
+    color: #C0B283;
+  }
+
+  .info-img-mob img{
+    width: 100%;
+  }
+  .text-info-mob{
+    text-align: center;
+  }
+  .text-info-mob h3{
+    margin-bottom: 8px;
+    color: #373737;
+    font-size: 1.15rem;
+  }
+
+  /*.info-mob:nth-child(2n+0){
+    background-color: #DCD0C0;
+  }*/
+}
+
+/*PROGRAMS SECTION BEGINS*/
+
+.programs{
+  background-color: #C0B283;
+}
+.program-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program{
+  /*border: 2px solid green;*/
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  background-color: #F4F4F4;
+}
+
+.program-img img{
+  width: 100%;
+}
+
+.program span{
+  display: block;
+}
+
+.program-text{
+  margin: 16px;
+  color: #373737;
+}
+
+.program:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+
+.programs-mob{
+  display: none;
+}
+
+#start{
+  text-align: center;
+  padding: 32px;
+  margin: 0px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+/*PROGRAMS SECTION MOBILE*/
+@media only screen and (max-width: 480px){
+.programs{
+  display: none;
+}
+.programs-mob{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #C0B283;
+
+}
+.program-text-mob:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+.program-text-mob{
+  margin-bottom: 8px;
+  background-color: #F4F4f4;
+}
+
+}
+/*Thesis Exhibit*/
+
+
+.thesis-exhibit h1{
+  text-align: center;
+  /*margin: 32px 0;*/
+  color: #373737;
+  font-size: 2rem;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+/*THESIS BEGINS*/
+
+.thesis-info{
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.thesis-main-info{
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-right: 16px;
+  width: 70%;
+}
+
+.thesis-video video{
+  width: 100%;
+  /*border: 3px solid green;*/
+}
+
+.thesis-video{
+  margin-bottom: 24px;
+}
+.thesis-video-text{
+  color: #373737;
+}
+
+.thesis-video-text h2{
+  font-size: 1.75rem;
+  /*border: 1px solid red;*/
+  margin: 0;
+}
+
+.thesis-sub{
+  display: flex;
+}
+
+.thesis-sub:nth-child(2n+0){
+  background-color: #DCD0C0;
+}
+
+.thesis-sub-img{
+  margin: 16px;
+}
+.thesis-sub-img img{
+  width: 10rem;
+}
+
+.thesis-sub-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #373737;
+  margin: 2rem;
+}
+
+.thesis-sub-txt h3{
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.thesis-exhibit-mob{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis-exhibit{
+    display: none;
+  }
+  .thesis-exhibit-mob{
+    display: flex;
+    flex-direction: column;
+  }
+  .thesis-exhibit-mob h1{
+    text-align: center;
+  }
+  .thesis-video-mob video{
+    width: 100%;
+  }
+
+}
+/*BEGIN FOOTER*/
+
+footer{
+  background-color: #C0B283;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  /*border: 3px solid green;*/
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 1.5rem;
+  color: #373737;
+}
+
+.footer-right{
+  text-align: right;
+  margin-right: 2rem;
+  color: #373737;
+}
+
+.footer-right span{
+  margin-left: .5rem;
+}
