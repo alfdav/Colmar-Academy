@@ -410,8 +410,8 @@ section .programs{
 }
 
 }
-/* Thesis */
 
+/* Thesis */
 
 .thesis-exhibit h1{
   text-align: center;
@@ -419,6 +419,7 @@ section .programs{
   font-size: 2rem;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 800;
+  margin: 2rem auto;
 }
 
 /* Thesis Begin */
@@ -442,14 +443,17 @@ section .programs{
 
 .thesis-video{
   margin-bottom: 24px;
+  margin: 0 1.5rem 1.5rem 1.5rem;
 }
 .thesis-video-text{
   color: #373737;
+  font-family: "Arimo", sans-serif;
 }
 
 .thesis-video-text h2{
   font-size: 1.75rem;
-  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .thesis-sub{
@@ -457,11 +461,12 @@ section .programs{
 }
 
 .thesis-sub:nth-child(even){
-  background-color: #DCD0C0;
+  background-color: #cccccc;
 }
 
 .thesis-sub-img{
-  margin: 16px;
+  margin: 1rem;
+  width: 35%;
 }
 .thesis-sub-img img{
   width: 10rem;
@@ -472,13 +477,15 @@ section .programs{
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  font-family: "Arimo", sans-serif;
   color: #373737;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .thesis-sub-txt h3{
   font-size: 1.15rem;
-  margin: 0;
+  margin: ;
+
 }
 
 .thesis-exhibit-mob{
@@ -501,29 +508,36 @@ section .programs{
   }
 
 }
-/*BEGIN FOOTER*/
+
+/* le footer */
 
 footer{
-  background-color: #C0B283;
+  background-color: #80aaff;
 }
+
+footer:hover {
+  background-color: #003cb3;
+  transition: background-color 700ms ease;
+}
+
 .footer{
   display: flex;
   flex-direction: row;
-  /*border: 3px solid green;*/
   justify-content: space-between;
   height: 5rem;
   align-items: center;
+  font-family: "Arimo", sans-serif;
 }
 
 .footer-left{
   margin-left: 1.5rem;
-  color: #373737;
+  color: white;
 }
 
 .footer-right{
   text-align: right;
   margin-right: 2rem;
-  color: #373737;
+  color: white;
 }
 
 .footer-right span{
