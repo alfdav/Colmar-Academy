@@ -132,7 +132,7 @@ h1{
   display: none;
 }
 
-/*BANNER MOBILE*/
+/* banner mob */
 @media only screen and (max-width: 768px){
 
 .banner{
@@ -179,12 +179,11 @@ h1{
 }
 
 .button-mob:hover{
-  background-color: #DCD0C0;
-  color: #373737;
+  background-color: #003cb3;
 }
 }
 
-/*COMPANY INFO!*/
+/* university info */
 
 .university-info{
   display: flex;
@@ -226,14 +225,14 @@ h1{
   flex-grow: 5;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #DCD0C0;
+  border-left: 1px solid #cccccc;
 }
 
 .info{
   display: flex;
 }
-.info:nth-child(2n+0){
-  background-color: #DCD0C0;
+.info:nth-child(odd){
+  background-color: #cccccc;
 }
 .info-img{
   margin: 16px;
@@ -247,13 +246,16 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:
+  align-items: center;
 }
 
 .text-info h3{
   margin-bottom: 8px;
   color: #373737;
   font-size: 1.15rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .text-info span{
@@ -262,46 +264,52 @@ h1{
 }
 
 #read-more{
-  color: blue;
+  color: #003cb3;
 }
 
 #read-more:hover{
-  color: #C0B283;
+  color: white;
 }
 
 .sub-info-mob{
   display: none;
 }
-/*MEDIA QUERYYYYYYYYY*/
+
+/* media mobile */
+
 @media only screen and (max-width: 480px){
   .main-info{
     display: none;
   }
   .sub-info{
     display: none;
-    /*border-bottom: #C0B283;*/
   }
-
   .sub-info-mob{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 16px 16px 0 16px;
+    padding: 16px 16px;
+  }
+  .info-mob {
+    display: flex;
+    flex-direction: column;
   }
   #read-more-mob{
-    color: blue;
+    color: #003cb3;
     display: block;
     margin: 16px 0;
   }
   #read-more-mob:hover{
-    color: #C0B283;
+    color: white;
   }
 
   .info-img-mob img{
     width: 100%;
   }
   .text-info-mob{
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   .text-info-mob h3{
@@ -309,16 +317,12 @@ h1{
     color: #373737;
     font-size: 1.15rem;
   }
-
-  /*.info-mob:nth-child(2n+0){
-    background-color: #DCD0C0;
-  }*/
 }
 
-/*PROGRAMS SECTION BEGINS*/
+/* programs */
 
 .programs{
-  background-color: #C0B283;
+  background-color: #cccccc;
 }
 .program-list{
   display: flex;
@@ -327,13 +331,13 @@ h1{
 }
 
 .program{
-  /*border: 2px solid green;*/
   display: flex;
   flex-direction: column;
   width: 25%;
   margin-right: 32px;
   margin-bottom: 20px;
   background-color: #F4F4F4;
+  font-family: "Arimo", sans-serif;
 }
 
 .program-img img{
@@ -349,9 +353,24 @@ h1{
   color: #373737;
 }
 
+.program-text h2 {
+  font-family: "Mave Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem
+}
+
+.program-text span {
+  margin: 8px 0 8px 0;
+}
+
 .program:hover{
-  background-color: #DCD0C0;
-  color: #373737;
+  background-color: #99bbff;
+  transition: background-color 200ms ease;
+}
+
+.program-text:hover {
+  transition: color 200ms ease;
+  color: white;
 }
 
 .programs-mob{
@@ -366,21 +385,24 @@ h1{
   font-weight: 800;
   font-size: 2rem;
 }
-/*PROGRAMS SECTION MOBILE*/
+
+/* programs mob */
+
 @media only screen and (max-width: 480px){
-.programs{
+section .programs{
   display: none;
 }
 .programs-mob{
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #C0B283;
+  background-color: #cccccc;
 
 }
 .program-text-mob:hover{
-  background-color: #DCD0C0;
-  color: #373737;
+  background-color: #99bbff;
+  transition: all 200ms ease;
+  color: white;
 }
 .program-text-mob{
   margin-bottom: 8px;
@@ -388,18 +410,18 @@ h1{
 }
 
 }
-/*Thesis Exhibit*/
+/* Thesis */
 
 
 .thesis-exhibit h1{
   text-align: center;
-  /*margin: 32px 0;*/
   color: #373737;
   font-size: 2rem;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: 800;
 }
 
-/*THESIS BEGINS*/
+/* Thesis Begin */
 
 .thesis-info{
   display: flex;
@@ -407,7 +429,6 @@ h1{
 }
 
 .thesis-main-info{
-  /*border: 1px solid red;*/
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
@@ -417,7 +438,6 @@ h1{
 
 .thesis-video video{
   width: 100%;
-  /*border: 3px solid green;*/
 }
 
 .thesis-video{
@@ -429,7 +449,6 @@ h1{
 
 .thesis-video-text h2{
   font-size: 1.75rem;
-  /*border: 1px solid red;*/
   margin: 0;
 }
 
@@ -437,7 +456,7 @@ h1{
   display: flex;
 }
 
-.thesis-sub:nth-child(2n+0){
+.thesis-sub:nth-child(even){
   background-color: #DCD0C0;
 }
 
